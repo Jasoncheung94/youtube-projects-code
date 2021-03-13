@@ -1,0 +1,33 @@
+# Specify the version for docker-compose.yml
+version: "3.8"
+
+# add the serivces needed (postgres,phppgadmin)
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: mypassword
+      # Optional: Give a name to the database, otherwise
+      # use the default value POSTGRES_USER as a database name (user in this case.)
+      # POSTGRES_DB: testdb
+    ports:
+      - "5432:5432"
+    volumes: 
+      - dbdata:/var/lib/postgresql/data
+  
+  phppgadmin:
+    container_name: phppgadmin
+    image: neimheadh/phppgadmin:latest
+    ports:
+      - "10080:80"
+    environment:
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=user
+      - POSTGRES_PASS=mypassword
+
+volumes:
+  dbdata: # create the volume for persisting data.
+            
