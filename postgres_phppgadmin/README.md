@@ -18,5 +18,5 @@ INSERT INTO  company(id,name) values (1,'test');
 SELECT * from company;
 ```
 
-Go to `http://localhost:8082/` to view phppgadmin
+Go to `http://localhost:10080/` to view phppgadmin
 
