@@ -52,7 +52,7 @@ export default {
       } while(checked)
     },
     sleep() {
-      return new Promise((resolve) => setTimeout(resolve, 500));
+      return new Promise((resolve) => setTimeout(resolve, 100));
     },
   },
   created() {

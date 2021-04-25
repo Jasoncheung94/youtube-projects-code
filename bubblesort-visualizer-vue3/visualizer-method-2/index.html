@@ -1,0 +1,45 @@
+<!Doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/vue@next"></script>
+  <title>Bubble Sort Visualizer</title>
+  <style>
+    #app {
+      font-family: Avenir, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-align: center;
+      color: #2c3e50;
+      margin-top: 60px;
+    }
+    .container {
+      position: fixed;
+      left: 100px;
+    }
+    .bar {
+      width: 20px;
+      background-color: black;
+      display: inline-block;
+      margin: 0 5px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Sorting Algorithm Visualizer</h1>
+        <button @click="bubbleSort()">Bubble Sort</button>
+        <button @click="fillArray()">Shuffle</button>
+      
+        <div class="container">
+          <!-- Loop through array numbers and display their height. -->
+          <div class="bar" v-for="(number,index) in array" :key="index" :style="{height: number + 'px'}">
+          </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
