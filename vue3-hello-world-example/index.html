@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example Vue3</title>
+        <!-- Import vue cdn -->
+        <script src="https://unpkg.com/vue@next"></script>
+    </head>
+    <body>
+        <!-- div will be controlled by vue. -->
+        <div id="app">
+            <h1>This is a Vue 3 example</h1>
+
+            {{ message }}
+            <button @click="sayHello()">Change Text</button>
+        </div>
+    </body>
+
+    <!-- import the js file for vue -->
+    <script src="main.js"></script>
+
+    <!-- TO have everything in one file can do the following -->
+    <!-- First need to comment out link to main.js and uncomment the below script tags -->
+
+    <!-- <script>
+        const app = Vue.createApp({
+            data(){
+                return {
+                    message: "Welcome!"
+                };
+            },
+            methods: {
+                sayHello(){
+                    this.message = "Hello!"
+                }
+            }
+        });
+
+        app.mount("#app");
+    </script> -->
+</html>
