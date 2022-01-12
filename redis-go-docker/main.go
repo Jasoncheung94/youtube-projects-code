@@ -8,6 +8,11 @@ import (
 	"github.com/go-redis/redis"
 )
 
+// go get -u github.com/go-redis/redis
+// If you encounter problems like I did with a newer version of Go. Run the following:
+// GO111MODULE="off" go get -u github.com/go-redis/redis and restart the IDE.
+// Restart IDE
+
 func main() {
 	fmt.Println("Hello everyone!")
 

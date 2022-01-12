@@ -9,7 +9,10 @@ import (
 )
 
 // Get this package if it's missing.
-// go get -u github.com/lib/p/ go get -u github.com/lib/pq
+// go get -u github.com/lib/pq
+// If you encounter problems like I did with a newer version of Go. Run the following:
+// GO111MODULE="off" go get -u github.com/lib/pq
+// Restart IDE
 
 func main() {
 	fmt.Println("connecting")
