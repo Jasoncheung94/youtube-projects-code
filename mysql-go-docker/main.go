@@ -12,6 +12,7 @@ import (
 // go get -u github.com/go-sql-driver/mysql if package is missing!
 // If you encounter problems like I did with a newer version of Go. Run the following:
 // GO111MODULE="off" go get github.com/go-sql-driver/mysql
+// Restart IDE
 
 func main() {
 	// Connect to the database with the name of the database container and it's login details.
