@@ -1,0 +1,14 @@
+# Sample service to change and read from env file instead
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:latest # use the latest image.
+    container_name: mongodb
+    restart: unless-stopped
+    env_file:
+      - variables.env
+    ports:
+      - 27017:27017
+
+# docker exec <name of container> env
+# This will list all of the env details in the container.
