@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  # add the mariadb service
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: password
+  
+  # Optional GUI for mariadb
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+# To use the CLI to access mariadb directly execute the following:
+# docker exec -it mariadb mysql --user=root --password=password
+
+# Login details for the mariadb GUI localhost:8080:
+# Server = name of the mariadb container. "mariadb" in my case.
+# Username = root
+# Password = password (same as the password mentioned above)
