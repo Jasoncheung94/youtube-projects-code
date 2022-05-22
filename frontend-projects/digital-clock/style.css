@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+#digitalClock {
+  color: #17d4fe;
+  font-family: "Digital-7";
+  font-size: 120px;
+  letter-spacing: 7px;
+}
+
+#date {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}

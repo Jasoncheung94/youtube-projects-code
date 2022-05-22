@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="stopwatch">
+      <h1>Stopwatch</h1>
+      <div class="circle">
+        <div class="time" id="time">00:00:00:00</div>
+      </div>
+      <div class="controls">
+        <button id="start">
+            <!-- Use the icon for a play button -->
+          <i class="fa fa-play"></i>
+        </button>
+        <button id="pause">
+            <!-- Use the icon for a pause button -->
+          <i class="fa fa-pause"></i>
+        </button>
+        <button id="reset">
+            <!-- Use the icon for a reset -->
+          <i class="fa fa-repeat"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="stopwatch.js"></script>
+  </body>
+</html>

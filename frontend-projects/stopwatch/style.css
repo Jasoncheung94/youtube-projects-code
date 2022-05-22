@@ -1,0 +1,47 @@
+.circle {
+  height: 450px;
+  width: 450px;
+  border: 5px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 16px;
+}
+
+.time {
+  font-weight: 900;
+  font-size: 70px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#pause {
+  display: none;
+}
+
+.stopwatch {
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 20px;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: monospace;
+  font-weight: 200;
+}
+
+/* design the buttons */
+button {
+  background-color: white;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+}
+#start { background-color: green;}
+#pause {background-color: red;}
+#reset {color: black;}
